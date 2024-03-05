@@ -1,15 +1,30 @@
 #include <stdio.h>
 #include <iostream>
 
+void pointerBasic();
+
+
+
 int main()
 {
 
 
-	std::string strtest = "10000";
 
-	std::cout << strtest << std::endl;
+	pointerBasic();
 
-	printf("Hello2");
 
 	return 0;
+}
+
+void pointerBasic()
+{
+	int a = 10;
+
+	int* b = &a;
+
+	printf("pointer %d\n original %d\n ", *b, a);
+
+	*b = 100;
+
+	printf("after pointer %d\n", a);
 }
