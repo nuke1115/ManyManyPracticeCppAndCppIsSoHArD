@@ -4,7 +4,10 @@
 int main()
 {
 
-	std::cout << "Hello" << std::endl;
+
+	std::string strtest = "10000";
+
+	std::cout << strtest << std::endl;
 
 	printf("Hello2");
 
