@@ -33,6 +33,8 @@ void pointerBasic()
 	*b = 100;
 
 	printf("after pointer %d\n", a);
+
+	delete b;
 }
 
 void PrintPractice(int a)
