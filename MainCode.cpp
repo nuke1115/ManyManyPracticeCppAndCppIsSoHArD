@@ -1,20 +1,12 @@
 #include <stdio.h>
 #include <iostream>
-#include "TestH.h"
+
 
 void pointerBasic();
 void PrintPractice(int a);
 
 int main()
 {
-	TestStruct tests;
-	TestStruct tests2;
-	printf("%d\n%d\n",tests.a,tests2.a);
-
-	tests.a = 100;
-
-
-	printf("%d\n%d\n", tests.a, tests2.a);
 
 
 	return 0;
