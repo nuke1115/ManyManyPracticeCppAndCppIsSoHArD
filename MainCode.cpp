@@ -1,24 +1,45 @@
 #include <stdio.h>
 #include <iostream>
+#include "TestH.h"
 
 void pointerBasic();
 void PrintPractice(int a);
-struct TestStruct
-{
-	int c = 10;
-	float d = 0.1;
-};
 
 int main()
 {
-	//TestStruct teststruct;
-	//printf("%d\n %f",teststruct.c, teststruct.d);
+	TestStruct tests;
+	TestStruct tests2;
+	printf("%d\n%d\n",tests.a,tests2.a);
 
-	pointerBasic();
-	PrintPractice(10);
+	tests.a = 100;
+
+
+	printf("%d\n%d\n", tests.a, tests2.a);
+
 
 	return 0;
 }
+
+void TestPrint(int a, int b)
+{
+	printf("%d\n%d\n",a,b);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void pointerBasic()
 {
