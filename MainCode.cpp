@@ -1,23 +1,39 @@
-#define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <iostream>
-
+#include <cstring>
 
 
 int main()
 {
-	char a[11];
-	char b[11];
 
-	scanf("%s" , a);
-	printf("%s" , a);
-
-	scanf_s("%s" , b);
-	printf("%s" , b);
+	//char result[3]; 와 char result[3] = ""; 이것과의 차이
+	//strcat과 strcpy의 차이 찾기
 
 
-	//scanf와 scanf_s의 차이
-	//그리고 위 두 코드에서의 오류의 차이
+	int* arr = new int[3];
+
+
+	arr[0] = 1;
+	arr[1] = 2;
+	arr[2] = 3;
+
+
+	printf("%d %d %d" , arr[0], arr[1], arr[2]);
+
+	delete arr;
+
+	int* arr2 = new int[3];
+
+
+	arr2[0] = 1;
+	arr2[1] = 2;
+	arr2[2] = 3;
+
+
+	printf("%d %d %d", arr2[0], arr2[1], arr2[2]);
+
+	free(arr2);
 
 	return 0;
 }
