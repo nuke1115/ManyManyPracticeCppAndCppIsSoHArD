@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\github workstation\Cpp\Baekjoon_History_Cpp\SourceCode\15687.cpp" />
     <ClCompile Include="MainCode.cpp" />
     <ClCompile Include="소스.cpp" />
   </ItemGroup>

@@ -1,6 +1,67 @@
 #include <stdio.h>
 #include <iostream>
+#include <list>
 using namespace std;
+
+class Stack
+{
+private:
+	list<int> _internalList;
+	
+
+public:
+	Stack()
+	{
+		
+	}
+
+	void push(int item)
+	{
+		_internalList.push_back(item);
+	}
+
+	int pop()
+	{
+		int tmp = -1;
+
+		if (!_internalList.empty())
+		{
+			tmp = _internalList.back();
+			_internalList.pop_back();
+		}
+
+		return tmp;
+	}
+
+	int size() const
+	{
+		return _internalList.size();
+	}
+
+	bool empty() const
+	{
+		bool isEmpty = true;
+
+		if (!_internalList.empty())
+		{
+			isEmpty = false;
+		}
+		return isEmpty;
+	}
+
+	int top() const
+	{
+		int tmp = -1;
+
+		if (!_internalList.empty())
+		{
+			tmp = _internalList.back();
+		}
+		return tmp;
+	}
+
+};
+
 
 
 int main()
@@ -16,7 +77,8 @@ int main()
 	//배열의 시작점을 포인터로 지정하고, 그 포인터에 1씩 더하면, 배열의 다음 인덱스의 값을 찾을수 있다
 	//배열에 인덱스로 접근하는게 아니라, 포인터로 접근이 가능한가?
 	
-	
+
+
 
 	return 0;
 }
